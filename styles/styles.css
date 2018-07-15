@@ -1,0 +1,273 @@
+
+html {
+    font-size: 10px;
+}
+
+body, div, p, ul, li, span, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+	font-weight: 300;
+} 
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    line-height: normal;
+    color: #ffffff;
+}
+
+#communications-app {
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    box-sizing: border-box;
+    font-size: 2.2rem;
+    background: #162a4c url("../images/background.png");
+}
+
+#app-content {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+#appointments-list {
+    list-style: none;
+    max-height: 100%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    flex: 1 1 45%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.appointment-item {
+    margin: 0 0 2%;
+    padding: 2.4rem 2.4rem 7rem;
+    height: 32%;
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);    
+}
+
+.appointment-item.active {
+    background-color: #0775aa;
+}
+
+.appointment-item span {
+    color: #aaaaaa;
+    font-size: 2rem;
+}
+
+.appointment-item button {
+    position: absolute;
+    bottom: 2.4rem;
+    right: 2.4rem;
+    color: #aaaaaa;
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    border: 0.1rem solid #aaaaaa;
+    padding: 0.8rem 4rem;
+}
+
+.appointment-item button:hover,
+.appointment-item button:focus,
+.appointment-item button:active,
+.appointment-item button.active {
+    outline: none;
+    background-color: #0775aa;
+    color: #cccccc;
+    border-color: #cccccc;
+    cursor: pointer;
+}
+
+.appointment-item.active span {
+    color: #cccccc;
+}
+
+.appointment-item.active button {
+    color: #cccccc;
+    border-color: #cccccc;
+}
+
+#actions-panel {
+    flex: 1 1 55%;
+}
+
+#time-bar {
+    height: 25%;
+    min-height: 11rem;
+    text-align: right;
+}
+
+#time-bar h3 {
+    font-size: 6rem;
+    line-height: 1.1;
+    margin-top: -0.7rem;
+}
+
+#time-bar span {
+    color: #aaaaaa;
+    font-size: 1.4rem;
+    display: block;
+    padding-right: 0.5rem;
+}
+
+#actions-list {
+    list-style: none;
+    max-height: 55%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.action-item {
+    text-align: center;
+    flex: 0 1 24rem;
+    align-self: center;
+}
+
+.action-item button {
+    font-size: 4.8rem;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 11rem;
+    height: 11rem;
+    color: #ffffff;
+    border: 0.1rem solid #aaaaaa;
+}
+
+.action-item button:hover,
+.action-item button:focus,
+.action-item button:active,
+.action-item button.active {
+    outline: none;
+    background-color: #0775aa;
+    border-color: #0775aa;
+    cursor: pointer;
+}
+
+.action-item h5 {
+    margin: 1rem 0 2rem;
+    color: #aaaaaa;
+}
+
+#volume-bar {
+    height: 20%;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#volume-bar > div {
+    display: flex;
+    align-items: center;
+}
+
+#volume-bar button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0 1rem 0 0;
+}
+
+#volume-bar .settings-btn {
+    font-size: 3rem;
+    margin: 0 0 0 3rem;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 15rem;
+    margin: 11px 0;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 15rem;
+    height: 0.2rem;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 0.1rem;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -0.9rem;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ffffff;
+}
+
+input[type=range]::-moz-range-track {
+    width: 15rem;
+    height: 0.2rem;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 0.1rem;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 15rem;
+    height: 0.2rem;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #ffffff;
+    border-radius: 0.2rem;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #aaaaaa;
+    border-radius: 0.2rem;
+}
+
+input[type=range]::-ms-thumb {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    margin: 0;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #ffffff;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #aaaaaa;
+}
+  

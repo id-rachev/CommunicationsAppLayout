@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Communications App Layout</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+
+    <body>
+        <div id="communications-app">
+
+            <div id="app-content">
+                <ul id="appointments-list">
+                    <li class="appointment-item active">
+                        <span>12:00pm - 1:00pm</span>
+                        <h3>Contoso Briefing</h3>
+                        <span>Kelly Rolin</span>
+
+                        <button>Join</button>
+                    </li>
+                    <li class="appointment-item">
+                        <span>1:00pm - 3:00pm</span>
+                        <h3>Weekly status meeting</h3>
+                        <span>Justin Harrison</span>
+
+                        <button>Join</button>
+                    </li>
+                    <li class="appointment-item">
+                        <span>3:00pm - 3:45pm</span>
+                        <h3>Customer user study report out</h3>
+                        <span>Brian Thomas</span>
+
+                        <button>Join</button>
+                    </li>
+                    <li class="appointment-item">
+                        <span>4:00pm - 4:30pm</span>
+                        <h3>Daily stand-up meeting</h3>
+                        <span>Jack Harrison</span>
+
+                        <button>Join</button>
+                    </li>
+                </ul>
+
+                <div id="actions-panel">
+                    <div id="time-bar">
+                        <h3>12:30 PM</h3>
+                        <span>Conf Room Venus</span>
+                        <span>(555) 555-7796</span>
+                    </div>
+
+                    <ul id="actions-list">
+                        <li class="action-item">
+                            <button><i class="fas fa-users"></i></button>
+                            <h5>New Meeting</h5>
+                        </li>
+                        <li class="action-item">
+                            <button><i class="fas fa-hashtag"></i></button>
+                            <h5>Dail Pad</h5>
+                        </li>
+                        <li class="action-item">
+                            <button><i class="fas fa-sign-in-alt"></i></button>
+                            <h5>Present</h5>
+                        </li>
+                        <li class="action-item">
+                            <button><i class="fas fa-user-plus"></i></button>
+                            <h5>Invite more people</h5>
+                        </li>
+                        <li class="action-item">
+                            <button><i class="fas fa-plus"></i></button>
+                            <h5>Invite this room</h5>
+                        </li>
+                        <li class="action-item">
+                            <button><i class="fas fa-microphone-slash"></i></button>
+                            <h5>Mute microphone</h5>
+                        </li>
+                        <li class="action-item">
+                            <button><i class="fas fa-pause"></i></button>
+                            <h5>Hold</h5>
+                        </li>
+                        <li class="action-item">
+                            <button><i class="fas fa-user-times"></i></button>
+                            <h5>Exclude participant</h5>
+                        </li>
+                        <li class="action-item">
+                            <button><i class="fas fa-sign-out-alt"></i></button>
+                            <h5>Leave meeting</h5>
+                        </li>
+                    </ul>
+
+                    <div id="volume-bar">
+                        <div>
+                            <button class="volume-btn"><i class="fas fa-volume-up"></i></button>
+                            <input type="range"/>
+                            <button class="settings-btn"><i class="fas fa-cog"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+</html>
